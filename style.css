@@ -1,0 +1,450 @@
+@import 'utilities.css';
+@import 'responsive.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 3000px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.nav-back {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: black;
+    z-index: 2;
+}
+
+.container {
+    max-width: 1100px;
+    /* background-color: aliceblue; */
+    padding: 3px 0;
+    margin: 0 auto;
+}
+
+.container nav .left img {
+    height: 30px;
+    width: 41px;
+}
+
+.right a {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.right a:hover {
+    color: #85028f;
+}
+
+.btn-1 button:hover {
+    background-color: transparent;
+    border: 1px solid #85028f;
+    color: #85028f;
+}
+
+.header-center {
+    position: relative;
+    top: 170px;
+    z-index: 0;
+    width: 1100px;
+    margin: 0 auto;
+    justify-content: space-around;
+
+
+}
+
+.header-center-left {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header-center-left img {
+    width: 290px;
+    height: 371px;
+}
+
+
+.header-center-right {
+    margin-left: 144px;
+}
+
+.header-center-right h1,
+h4,
+h6 {
+    color: white;
+}
+
+.header-center-right h1 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.header-center-right h1 span {
+    color: #85028f;
+}
+
+.header-center-right h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.header-center-right h6 {
+    font-size: 30px;
+}
+
+.header-center-right button {
+    background-color: transparent;
+    border: 1px solid #85028f;
+    color: #85028f;
+    transition: all 0.3s;
+    justify-content: space-around;
+}
+
+.header-center-right button span {
+    font-size: 20px;
+}
+
+.header-center-right button:hover {
+    background-color: #85028f;
+    border: transparent;
+    color: white;
+}
+
+
+
+/* SECTION */
+.section-about {
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.section-div {
+    justify-content: space-around;
+    position: relative;
+    top: 150px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.section-about>h1 {
+    position: relative;
+    top: 50px;
+    width: 180px;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.section-about>h1 span {
+    color: #85028f;
+}
+
+.section-div .section-right img {
+    width: 300px;
+    height: 399px;
+}
+
+.section-div .section-right {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.section-div .section-left {
+    width: 700px;
+}
+
+.section-div .section-left p {
+    margin: 20px 0;
+    line-height: 180%;
+}
+
+.section-div .section-left button:hover {
+    /* background-color: #85028f; */
+    background-color: transparent;
+    color: #85028f;
+    border: 1px solid #85028f;
+}
+
+
+/* For Project */
+.section-project {
+    height: 100vh;
+    background-color: rgb(245, 245, 244);
+}
+
+.section-project>h1 {
+    position: relative;
+    top: 50px;
+    width: 180px;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.section-project .section-project-div {
+    position: relative;
+    top: 240px;
+    background-color: aqua;
+    overflow: hidden;
+    width: 250px;
+    margin: 0 auto;
+
+
+}
+
+.section-project .section-project-div p {
+    font-size: 30px;
+    width: 200px;
+    margin: 0% auto;
+}
+
+/* For Experience */
+.section-experience {
+    height: 100vh;
+    background-color: rgb(243, 243, 239);
+    background: url('../images/socialicons/plane.jpg') no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+.section-experience>h1 {
+    position: relative;
+    top: 50px;
+    width: 180px;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.experience-div {
+    position: relative;
+    top: 70px;
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.experience-div p {
+    /* background-color: #85028f; */
+    border-radius: 4px;
+    color: black;
+    padding: 10px 18px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* For Tablinks */
+
+.tab-links.active-link {
+    background-color: #85028f;
+    color: white;
+}
+
+.tab-contents {
+    display: none;
+
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+#experience {
+    width: 670px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+
+}
+
+#experience .exp {
+    background-color: rgb(255, 255, 255);
+    width: 310px;
+    height: 200px;
+    position: relative;
+    right: 15px;
+    border-radius: 5px;
+}
+
+#experience .exp2 {
+    left: 390px;
+    top: 20px;
+}
+.exp1 p{
+    padding: 30px;
+    padding-top: 70px;
+}
+.exp2 p{
+    padding: 30px;
+    padding-top: 70px;
+}
+.edu1 p{
+    padding: 30px;
+    padding-top: 70px;
+}
+.edu2 p{
+    padding: 30px;
+    padding-top: 70px;
+}
+
+#education {
+    width: 670px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#education .edu1 {
+    background-color: rgb(255, 255, 255);
+    width: 310px;
+    height: 200px;
+    position: relative;
+    left: 390px;
+    border-radius: 5px;
+}
+
+#education .edu2 {
+    background-color: rgb(255, 255, 255);
+    width: 310px;
+    height: 200px;
+    position: relative;
+    right: 15px;
+    top: 20px;
+    border-radius: 5px;
+}
+
+
+/* For Footer */
+footer {
+    height: 100vh;
+    background-color: rgb(243, 243, 243);
+}
+
+footer h1 {
+    width: 170px;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+}
+
+.contact-me {
+    position: relative;
+    top: 30px;
+    height: 500px;
+    width: 600px;
+    /* background-color: #ff0000; */
+    margin: 0 auto;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 9px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    outline: none;
+
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 9px;
+    border: none;
+    border-radius: 3px;
+    margin: 6px 0;
+    font-size: 15px;
+    outline: none;
+
+
+}
+
+form textarea {
+    width: 602px;
+    height: 246px;
+    padding: 9px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    outline: none;
+}
+
+form button {
+    width: 400px;
+    margin-left: 100px;
+}
+
+form button:hover {
+    background-color: #ea07fa;
+}
+
+.contact-me p span {
+    color: #85028f;
+}
+
+.contact-me p {
+    margin: 15px 9px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons a i {
+    color: white;
+    font-size: 23px;
+    margin-left: 25px;
+}
+.social-icons a i:hover {
+    color: #85028f;
+
+}
+
+.credit {
+    background-color: black;
+    position: relative;
+    bottom: -118px;
+    padding: 0 30px;
+    height: 40px;
+    width: 100%;
+}
+
+.credit p {
+    color: white;
+}
+
+.credit>p>span {
+    color: #85028f;
+}
+
+.credit>p>i {
+    color: #ff0000;
+}

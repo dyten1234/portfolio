@@ -1,0 +1,47 @@
+@media (max-width:1100px) and (min-width: 768px) {
+    header {
+        width: 144%;
+    }
+
+    .section-about {
+        width: 144%;
+    }
+
+    .section-project {
+        width: 144%;
+    }
+
+    .section-experience {
+        width: 144%;
+    }
+
+    footer {
+        width: 144%;
+    }
+}
+
+@media (max-width:767px) and (min-width: 425px) {
+    header {
+        width: 258%;
+    }
+
+    .section-about {
+        width: 258%;
+
+    }
+
+    .section-project {
+        width: 258%;
+
+    }
+
+    .section-experience {
+        width: 258%;
+
+    }
+
+    footer {
+        width: 258%;
+
+    }
+}
