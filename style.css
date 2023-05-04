@@ -222,7 +222,7 @@ h6 {
 .section-experience {
     height: 100vh;
     background-color: rgb(243, 243, 239);
-    background: url('../images/socialicons/plane.jpg') no-repeat;
+    background: url('plane.jpg') no-repeat;
     background-size: cover;
     background-blend-mode: soft-light;
 }
